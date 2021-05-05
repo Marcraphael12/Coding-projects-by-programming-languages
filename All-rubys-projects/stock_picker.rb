@@ -20,9 +20,9 @@ def stock_picker(stocks_prices) #main method
 
     buy_days.index do |day_index|
       if day_index.include?(difference.max) # is the max value of the difference[] is equal to day_index
-        last_buy_day = buy_days.index(day_index) 
-        last_difference = day_index.index(difference.max)
-        puts "[day: #{last_buy_day}, difference: #{last_difference}]"
+        last_buy = buy_days.index(day_index) 
+        last_sell = day_index.index(difference.max)
+        puts "[buying index: #{last_buy}, selling index: #{last_sell}] Thank you ✌🏾✌🏾✌🏾"
       end 
     end
 	# puts "[#{buy.index(buy.max)}, #{buy[buy.index(buy.max)][buy.index(buy.max)]}]"
@@ -30,3 +30,4 @@ end
 
 
 stock_picker([17,3,6,9,15,8,6,1,10])
+#=> [1,4] for a profit of $15 - $3 == $12
