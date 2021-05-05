@@ -7,13 +7,6 @@ def substrings(string, dict)#global method
     end
     dictionaryHash
   end
-  # dict.each do |key|
-  #   string.split(" ").each do |word|
-  #     if word.downcase.include?(key)
-  #       hash.key?(key) ? hash[key] += 1 : hash[key] = 1
-  #     end
-  #   end
-  # end
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
 string = "Howdy partner, sit down! How's it going?"
 
