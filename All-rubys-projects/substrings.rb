@@ -8,9 +8,11 @@ def substrings(string, dict)#global method
     dictionaryHash
   end
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
-string = "Howdy partner, sit down! How's it going?"
 
-puts substrings(string, dictionary)
+puts "enter your own string"
+string = gets.chomp
 
-# output: {"down"=>1, "go"=>1, "going"=>1, "how"=>2, "howdy"=>1, 
-# 	"it"=>2, "i"=>3, "own"=>1, "part"=>1, "partner"=>1, "sit"=>1}
+count = substrings(string, dictionary)
+puts "#{count} Thank you ✌🏾✌🏾✌🏾"
+# output: return a hash by showing you words that are in  the dictionary and how many there is.
+#it does'nt print word that are not in dictionary

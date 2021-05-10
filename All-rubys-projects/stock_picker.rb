@@ -5,8 +5,8 @@ def stock_picker(stocks_prices) #main method
 	difference = [] # array for difference
 
 	stocks_prices.each_with_index do |buy_price, buy_index| # iterating over stocks_prices to get the value of each "buyprice"
+    
     profit = [] # array to the profit
-    puts profit
     buy_days << profit # add the value of profit at the end of buy_days array
 
 
