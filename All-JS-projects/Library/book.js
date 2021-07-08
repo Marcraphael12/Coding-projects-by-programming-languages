@@ -6,21 +6,28 @@ function Library (title, author, pages, read) {
   this.read = read || 'Readed or not?'
 }
 
-let lbr = new Library()
+const lbr = new Library()
 
 // the form element
 const form = document.createElement('form')
 
 // all form's inputs
-let ttl = lbr.title = document.createElement('input')
-let ath = lbr.author = document.createElement('input')
-let pgs = lbr.pages = document.createElement('input')
-let rd = lbr.read = document.createElement('input')
+const ttl = lbr.title = document.createElement('input')
+const ath = lbr.author = document.createElement('input')
+const pgs = lbr.pages = document.createElement('input')
+pgs.setAttribute('type', 'number')
+const rd = lbr.read = document.createElement('input')
+rd.setAttribute('type', 'range')
+
+const btn = document.querySelector('.btn')
 
 // add inputs and styling form
-form.appendChild(ttl, ath, pgs, rd)
-form.style.display = 'flex';
-form.style.flexDirection = 'column';
-form.style.width = '100px';
-form.style.height = '250px';
-
+form.appendChild(ttl)
+form.appendChild(ath)
+form.appendChild(pgs)
+form.appendChild(rd)
+form.style.display = 'flex'
+form.style.flexDirection = 'column'
+form.style.width = '200px'
+form.style.height = '150px'
+document.getElementById('main').insertBefore(form, btn)
