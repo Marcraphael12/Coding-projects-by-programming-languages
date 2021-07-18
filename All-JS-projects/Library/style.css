@@ -1,8 +1,20 @@
-* { font-family: 'Poppins', sans-serif; }
+* {
+	font-family: 'Poppins', sans-serif;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding-inline-start: 0;
+	padding-inline-end: 0;
+	padding-block-start: 0;
+	padding-block-end: 0;
+	box-sizing: border-box;
+}
 
 body {
-	height: 90vh;
+	height: 98vh;
 	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 ul {
@@ -15,17 +27,16 @@ ul {
 
 a {
 	text-decoration: none;
-	color: rgba(66, 255, 0, 1);
+	color: #00ff00;
 	margin-left: 5px;
 }
 
-a:hover { color: #FFF500; }
+a:hover { color: #f3ff00; }
 
 #header {
 	width: 100%;
-	box-shadow: 0 0 2px black;
-	height: 120px;
-	background-color: #FFF500;
+	height: 25%;
+	background-color: #f3ff00;
 	display: flex;
 	justify-content: center;
 	font-style: normal;
@@ -40,25 +51,36 @@ a:hover { color: #FFF500; }
 
 #main {
 	width: 100%;
-	height: 75%;
+	height: 70%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	background-color: black;
-	background-image: url(./background/Group3.png);
-	background-repeat: no-repeat;
-	background-position: top right;
-	background-size: 35% 70%;
+	background: black;
+
 
 }
 
+.books {
+	box-shadow: -1px 1px 1px #00ff00;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: calc(100% - 275px);
+	height: 95%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	border: none;
+	overflow: auto;
+}
+
 .block {
-	width: 250px;
+	width: 260px;
 	height: 310px;
 	box-shadow: 0 0 2px black;
 	background: #161616;
-	margin-top: 18px;
-	margin-left: 10px;
+	margin-top: 10px;
 }
 
 .header2{
@@ -71,12 +93,12 @@ a:hover { color: #FFF500; }
 	letter-spacing: 0.046em;
 	line-height: 81px;
 	text-align: center;
-	color: #FFF500;
+	color: #f3ff00;
 }
 
 ul.list {
 	color: black;
-	background-color: #FFF500;
+	background-color: #f3ff00;
 	width: 211.65px;
 	height: 207.6px;
 	border-radius: 24.6592px;
@@ -115,25 +137,23 @@ ul.list {
 	font-weight: 900;
 	font-size: 21.0098px;
 	line-height: 32px;
-	color: rgba(66, 255, 0, 1);
+	color: #00ff00;
 	background: none;
 	border: unset;
 	cursor: pointer;
-	margin-top: 18px;
-	margin-left: 10px;
+	margin: 18px;
 }
 
-.btn:hover { color: #FFF500;}
+.btn:hover { color: #f3ff00;}
 
 #footer {
 	width: max-content;
-	height: 30px;
+	height: 5%;
 	margin: auto auto 0 auto;
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	letter-spacing: 0.131em;
-	line-height: 0.7;
 	font-size: 14px;
 	font-weight: 700;
-	color: #FFF500;
+	color: #f3ff00;
 }
