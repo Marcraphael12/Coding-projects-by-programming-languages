@@ -1,7 +1,5 @@
 const btn = document.querySelector('.btn')
 
-
-
 /************************* Create the form's buttons ************************/
 const div = document.createElement('div') // the form's buttons go inside this
 div.setAttribute('style', '\
@@ -80,7 +78,7 @@ function open() {
   
   /***************************** The form element ****************************/
   const form = document.createElement('form') // inputs go inside this
-  
+
   function inputStyle(input) {
     
     /*************** Inputs: Style function for inputs *************/
