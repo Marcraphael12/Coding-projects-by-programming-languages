@@ -6,30 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Library</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="body">
-      <header id="header">
-          My Library
-      </header>
+    <header id="header">
+      welcome to your JavaScript library
+    </header>
+    <main id="main">
+      <div class="block">
+        <h2 class="header2">Books stats</h2>
 
-      <main id="main">
-        <button type="button" class="btn">&plus;</button>
-      </main>
-
-      <aside id="aside">
-        <h3 class="stats">Books Stats</h3>
-        <ul class="ul">
-          <li class="book">Books added <span class="count">0</span></li>
-          <li class="book">Books completed <span class="count">0</span></li>
-          <li class="book">Books removed <span class="count">0</span></li>
+        <ul class="list">
+          <li class="li"><span class="li-text"> Books added </span> <span class="count">0</span></li>
+          <li class="li"><span class="li-text"> Books reading</span> <span class="count">0</span></li>
+          <li class="li"><span class="li-text"> Books completed </span> <span class="count">0</span></li>
         </ul>
-      </aside>
-
-      <footer id="footer">
-        copyright &copyMarc Raphael, All rights reserved. See other projects on my <a href="https://github.com/Marcraphael12"> github page</a>
-      </footer>
-    </div>
+      </div>
+      <div class="books">
+        <button type="button" class="btn">Add book +</button>
+      </div>
+    </main>
+    <footer id="footer">
+      CopyRight &copyMarc Raphael, Projects free for everyone. See other projects on my <a href="https://github.com/Marcraphael12"> GitHub</a>
+    </footer>
     <script src="book.js"></script>
   </body>
 </html>
