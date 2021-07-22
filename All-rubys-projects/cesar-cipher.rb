@@ -23,4 +23,4 @@ puts "now type the shift to see (number only)"
 n_shift = gets.chomp.to_i
 caesar_cipher(message, n_shift)
 
-puts "your encrypt message is: '#{message}'✌🏾✌🏾✌🏾  "
+puts "your encrypt message is: '#{message}'✌🏾✌🏾✌🏾 "
