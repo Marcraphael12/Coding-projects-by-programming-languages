@@ -6,7 +6,7 @@ function diagonalDifference(arr) {
 		// for an array arr of n elements: i is an element of arr; j is an element of i
 		for (let j = 0; j < l; j++) {
 			if (i === j) {
-				// for the first diag, i will always bing equal to j
+				// for the first diag, i will always be equal to j
 				diag1 += arr[i][j];
 				//console.log(diag1);
 			}
