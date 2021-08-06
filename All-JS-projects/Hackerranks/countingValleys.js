@@ -40,6 +40,6 @@ function countingValleys(steps, path) {
 			sea++; // increase sea because of the mountain
 		}
 	}
-	return mountain;
+	return valley;
 }
 console.log(countingValleys(12,'DDUUDDUDUUUD'));
